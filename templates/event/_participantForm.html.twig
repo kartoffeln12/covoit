@@ -1,0 +1,6 @@
+{{ form_start(form) }}
+    {{ form_widget(form) }}
+<div class="rgpd-text"><b>En cliquant sur "Valider" vous acceptez que nous conservions vos données jusqu'à la date de l'événement.<br/>
+    vos données seront supprimées automatiquement le lendemain de l'événement. <br/> </b></div>
+<button class="btn">{{ button_label|default("Valider") }}</button>
+{{ form_end(form) }}

@@ -1,0 +1,6 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+jmose_command_scheduler:
+  resource: "@JMoseCommandSchedulerBundle/Resources/config/routing.yml"
+  prefix:   /

@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Covoiturage / {{ controller_name }} {% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+    <a href="{{ link}}"><button class="reverse-button">Participants déclarés</button></a>
+<div class="main-content">
+    <h1>Fiche participant à l'événement:<br/>{{ controller_name }}</h1>
+    <h3 style="color: gray; margin-right: 50px;margin-left: 50px;">Cette application en phase d'expérimentation vous permet de déclarer votre intention de covoiturer pour cette réunion ou formation. Attention, vous ne pourrez pas modifier votre saisie une fois le formulaire validé. Veillez donc notamment à indiquer un mode de contact (tél ou mail) valide pour permettre les futurs contacts avec les autres participants.</h3>
+    <h3 style="color: red">{{ error|default("") }}</h3>
+    {{ include('event/_participantForm.html.twig') }}
+</div>
+{% endblock %}

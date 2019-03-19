@@ -1,0 +1,88 @@
+body {
+    background-color: lightgray;
+    background-image: url("../images/crosswalk-and-road-through-grassy-hills_4460x4460.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-content{
+    text-align: center;
+}
+
+#event div, #participant div{
+    margin-top: 20px;
+    position: relative;
+}
+#event, #participant{
+    text-align: left;
+    margin-left: 35%;
+    margin-top: 40px;
+    font-size: 1.5rem;
+}
+#event label, #participant label{
+    margin-right: 20px!important;
+    min-width: 90px!important;
+    width: 90px;
+    color: #a1ab02;
+}
+#event input, #participant_departement{
+    border-radius: 5px;
+    position: absolute;
+    left: 250px;
+    opacity: 0.8;
+}
+#participant input, #participant_departement{
+    border-radius: 5px;
+    position: absolute;
+    left: 320px;
+    opacity: 0.8;
+}
+h1{
+    font-size: 1.6rem;
+}
+#participant_departement{
+    width: 173px;
+    height: 21px;
+}
+
+#event_date select{
+    margin-right: 5px;
+}
+
+.reverse-button{
+    position: absolute;
+    top: 15px;
+    right: 30px;
+}
+button{
+    cursor: pointer;
+    margin-top:20px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    padding: 10px;
+}
+#event_date{
+    display: inline;
+    position: absolute;
+    left: 200px;
+    opacity: 0.8;
+}
+.rgpd-text{
+    margin-top: 15px;
+    color: lightgrey;
+}
+
+table, th, td {
+    border: 1px solid black;
+    color: white;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-left:auto;
+    margin-right:auto;
+    white-space: nowrap;
+}
+.table-content{
+    overflow-y: auto;
+}
