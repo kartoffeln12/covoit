@@ -27,7 +27,8 @@ Pour la suppression des données périmées il faut lancer la commande
     php bin/console app:delete
  **WARNING: la commande supprime toute les données des événements passés, jour courant inclus!**
 
-Pour rendre la suppression automatique il faut crée une tache planifié.
+Pour rendre la suppression automatique il faut créer une tache planifiée.
+
 *linux*:
 
     0 0 23 * * root [project-path]/bin/console app:delete
